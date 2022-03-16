@@ -1,0 +1,6 @@
+int intArray[7] = {1, 3, 5, 7, 9, 11, 13}; // an array containing 7 integers 
+vector<int> vecList(intArray, intArray + 7); // initializes the vector container vecList
+vector<int>::iterator intVecIter; // declares intVecIter to be an iterator into a vector container whose element type is int
+intVecIter = vecList.begin(); // initializes the iterator intVecIter to the first element of the vecList
+++intVecIter; // advances intVecIter to the second element of the vecList
+vecList.insert(intVecIter, 22); // inserts 22 at the position specified by intVecIter
